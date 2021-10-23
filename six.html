@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<Html>
+
+<head>
+    <title>
+        Institute Registration
+    </title>
+</head>
+
+<body>
+
+    <body bgcolor="Lightskyblue">
+        <br>
+        <br>
+        <form>
+            <div class="login-header">
+                <h3>Institute Registration Form</h3>
+                <p>Basic Details:</p>
+                <label>   
+                        Institute Category : 
+                        </label>
+                <select>  
+                        <option value="Institute Category">Dropdown button</option>
+                     </select>
+
+                <br><br>
+
+                <label> Name:</label>
+                <input type="text" name="Name" size="15" />
+                <br><br>
+
+                <label>   
+                    State: 
+                    </label>
+                <select>  
+                    <option value="State">Dropdown button</option>  
+                </select>
+
+
+                <label>   
+                    District: 
+                    </label>
+                <select>  
+                    <option value="State">Dropdown button</option>  
+                    
+                          
+                    </select>
+
+                <br><br>
+                <label> Institute Code:</label>
+                <input type="text" name="Institute Code" size="5" />
+
+                <label> DISE code:</label>
+                <input type="text" name="DISE Code" size="5" />
+
+                <br><br>
+                <input type="radio" id="Rural" name="Location" value="Rural">
+                <label for="Rural">Rural</label><br>
+                <input type="radio" id="Urban" name="Location" value="Urban">
+                <label for="Urban">Urban</label><br><br>
+
+                <label>   
+    Institute Type: 
+    </label>
+                <select>  
+    <option value="State">Dropdown button</option>  
+
+    </select>
+                <label>   
+        Affiliated University State: 
+        </label>
+                <select>  
+        <option value="State">Dropdown button</option>  
+    </select> <br><br>
+
+                <label> Affiliated University Board Name:</label>
+                <input type="text" name="Affiliated University Board Name" size="10" />
+
+                <br><br>
+
+                <label>   
+        Year from which admission started: 
+        </label>
+                <select>  
+        <option value="State">Dropdown button</option>  
+        </select>
+                <br><br>
+
+                <label> Set Password:</label>
+                <input type="text" name="Set Password" size="10" />
+
+                <br><br>
+
+                <label>Confirm Password:</label>
+                <input type="text" name="Confirm Password" size="10" />
+
+                <br><br>
+                <p> Proof of Existing Institute:</p>
+
+                <form action="upload.php" method="post" enctype="multipart/form-data">
+                    Institute Establishment/Registration Certificate:
+                    <input type="file" name="fileToUpload" id="fileToUpload">
+                    <input type="submit" value="Upload Image" name="submit">
+                    <br><br>
+
+                    <p> Affiliated To:</p>
+
+                    <form action="upload.php" method="post" enctype="multipart/form-data">
+                        University/Board Affiliation Certificate:
+                        <input type="file" name="fileToUpload" id="fileToUpload">
+                        <input type="submit" value="Upload Image" name="submit">
+                        <br><br>
+
+                        <p> Address:</p>
+
+                        <label> Line1: </label>
+                        <input type="text" name="Line1" size="10" />
+                        <label> Line2:</label>
+                        <input type="text" name="Line2" size="10" />
+                        <br><br>
+
+                        <label> City:</label>
+                        <input type="text" name="City" size="10" />
+
+                        <label>   
+                    District: 
+                    </label>
+                        <select>  
+                    <option value="District">Dropdown button</option>  
+                    
+                          
+                    </select>
+
+                        <label>   
+                        Pincode: 
+                        </label>
+                        <select>  
+                        <option value="District">Dropdown button</option>  
+                        
+                              
+                        </select>
+
+                        <p>Contact Details:</p>
+
+                        <label> Principal Name:</label>
+                        <input type="text" name="Principal Name" size="10" />
+
+                        <label> Mobile Number</label>
+                        <input type="text" name="Mobile Number" size="10" />
+
+                        <br><br>
+                        <label> Telephone:</label>
+                        <input type="text" name="Telephone" size="10" />
+
+                        <br><br>
+                        <input type="checkbox" name="select" id="select" />
+                        <label for="send_select">All the details and documents submitted by us are valid and true, if found guilty of submitting invalid documents, we may be held responsible for that act by us</label>
+
+                        <br><br>
+                        <input type="Submit">
+
+                        <input type="reset">
+
+                    </form>
+    </body>
+
+</Html>
